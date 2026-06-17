@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE UNDERGROUND | Urban Zine Culture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 6rem 0 4rem;
+            background-color: var(--neon);
+            color: var(--black);
+            border-bottom: var(--border-width) solid var(--black);
+        }
+
+        .zine-layout {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .zine-col-left {
+            grid-column: span 7;
+            padding-right: 4rem;
+        }
+
+        .zine-col-right {
+            grid-column: span 5;
+            border-left: var(--border-width) solid var(--black);
+            padding-left: 4rem;
+        }
+
+        .pull-quote {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 3rem;
+            line-height: 0.9;
+            margin: 4rem 0;
+            background: var(--black);
+            color: var(--white);
+            padding: 2rem;
+            transform: rotate(1deg);
+        }
+
+        .technical-spec {
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            border: 1px solid var(--black);
+            padding: 1rem;
+        }
+
+        @media (max-width: 900px) {
+            .zine-col-left, .zine-col-right { grid-column: span 12; border-left: none; padding: 0; }
+            .pull-quote { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">URBN_ZN</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">DROP</a></li>
+                    <li><a href="culture.html" class="active">CULTURE</a></li>
+                    <li><a href="lookbook.html">VISION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="tag-label">LOG_ENTRY_004</span>
+                <h1>THE UNDERGROUND.</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="zine-layout">
+                    <div class="zine-col-left">
+                        <h2 style="background: none; color: inherit; padding: 0;">NOISE_IS_CLARITY</h2>
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem; font-weight: 700;">Founded in the back-alleys of the digital grid, URBN_ZN is more than a collective—it is a refusal of the polished, the pre-packaged, and the predictable.</p>
+                        <p style="margin-bottom: 2rem;">We believe that the beauty of a city isn't in its skylines, but in the grime on its walls and the signals in its air. Our mission is to capture the raw energy of urban survival and translate it into tactile artifacts.</p>
+                        <p>Every piece we release, every image we archive, is a node in a decentralized network of rebels. We don't follow trends; we document the friction of the now.</p>
+                        
+                        <div class="pull-quote">
+                            "WE BUILD THE WALLS YOU SPRAY ON."
+                        </div>
+                    </div>
+
+                    <div class="zine-col-right">
+                        <h3 style="margin-bottom: 2rem;">PROTOCOLS</h3>
+                        <ul style="font-weight: 800;">
+                            <li style="margin-bottom: 1.5rem;">[01] RATIONALIZATION IS DEATH.</li>
+                            <li style="margin-bottom: 1.5rem;">[02] RAW TEXTURE > SMOOTH GRADIENTS.</li>
+                            <li style="margin-bottom: 1.5rem;">[03] ALL SIGNALS ARE ANALOG IN THE END.</li>
+                            <li style="margin-bottom: 1.5rem;">[04] THE GRID IS A CHOICE, NOT A CAGE.</li>
+                        </ul>
+
+                        <div class="technical-spec">
+                            <span class="tag-label">SYSTEM_SPECS</span>
+                            <p>STATION: BERLIN_NODE_01</p>
+                            <p>UPTIME: 99.9%_TRUE_RAW</p>
+                            <p>SIGNAL: ENCRYPTED_ZINE_FEED</p>
+                        </div>
+
+                        <div style="margin-top: 4rem; background: var(--black); height: 400px; display: flex; align-items: center; justify-content: center; color: var(--neon);">
+                            [ CULTURE_MOCKUP ]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">URBN_ZN</div>
+                    <p style="opacity: 0.7;">The definitive underground zine collective. Noise is clarity. Raw is honest.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>CHANNELS</h4>
+                    <ul>
+                        <li><a href="index.html">The Drop</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="lookbook.html">The Vision</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LOGS</h4>
+                    <ul>
+                        <li>Privacy Protocol</li>
+                        <li>Terms of Service</li>
+                        <li>Shipping Nodes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 URBN_ZN COLLECTIVE. (MADE_IN_THE_SHADOWS)</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

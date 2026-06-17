@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DROP | Urban Zine Collective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .hero {
+            position: relative;
+            padding: 12rem 0 8rem;
+            background-color: var(--black);
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            position: relative;
+            z-index: 2;
+            color: var(--neon);
+            mix-blend-mode: difference;
+        }
+
+        .hero-img-overlay {
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            width: 50%;
+            height: 80%;
+            background: var(--grey-dark);
+            border: 4px solid var(--neon);
+            z-index: 1;
+            opacity: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 3rem;
+            color: var(--neon);
+        }
+
+        .drop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .pasted-look {
+            transform: rotate(-2deg);
+        }
+        
+        .pasted-look:nth-child(even) {
+            transform: rotate(1.5deg);
+        }
+
+        @media (max-width: 900px) {
+            .hero-img-overlay { width: 90%; height: 40%; top: 50%; opacity: 0.2; }
+            .hero { padding: 8rem 0 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">URBN_ZN</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">DROP</a></li>
+                    <li><a href="culture.html">CULTURE</a></li>
+                    <li><a href="lookbook.html">VISION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="tag-label">RELEASE_09.26</span>
+                <h1>THE<br>REBEL<br>GRID.</h1>
+                <div class="hero-img-overlay">[ RAW_INPUT_01 ]</div>
+                <p style="max-width: 400px; margin-top: 4rem; font-weight: 700; color: var(--neon);">Underground aesthetics for the digitally displaced. We build the walls you spray on.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>LATEST_DROPS</h2>
+                <div class="drop-grid">
+                    <div class="zine-card pasted-look">
+                        <div style="height: 300px; background: var(--black); margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; color: var(--neon);">[IMG_X]</div>
+                        <span class="tag-label">STREETWEAR</span>
+                        <h3>GRAFFITI_HOODIE</h3>
+                        <p style="margin-top: 1rem; font-size: 0.85rem;">Heavy-weight cotton, oversized fit, raw hem. Limited to 50 units.</p>
+                        <a href="#" class="btn-zine" style="margin-top: 2rem; width: 100%; text-align: center;">SNAG_IT</a>
+                    </div>
+
+                    <div class="zine-card pasted-look">
+                        <div style="height: 300px; background: var(--neon); margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; color: var(--black);">[IMG_Y]</div>
+                        <span class="tag-label">ACCESSORIES</span>
+                        <h3>SIGNAL_BLOCK_CAP</h3>
+                        <p style="margin-top: 1rem; font-size: 0.85rem;">RF-shielded lining for privacy in high-density urban nodes.</p>
+                        <a href="#" class="btn-zine" style="margin-top: 2rem; width: 100%; text-align: center;">SNAG_IT</a>
+                    </div>
+
+                    <div class="zine-card pasted-look">
+                        <div style="height: 300px; background: var(--grey-dark); margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; color: var(--white);">[IMG_Z]</div>
+                        <span class="tag-label">PRINTS</span>
+                        <h3>ZINE_ISSUE_04</h3>
+                        <p style="margin-top: 1rem; font-size: 0.85rem;">84 pages of raw underground photography and manifesto snippets.</p>
+                        <a href="#" class="btn-zine" style="margin-top: 2rem; width: 100%; text-align: center;">SNAG_IT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-neon" style="text-align: center;">
+            <div class="container">
+                <h2 style="background: var(--black); color: var(--neon);">JOIN_THE_VOID</h2>
+                <p style="margin: 3rem auto; max-width: 600px; font-weight: 800;">Get alerts for unannounced drops and secret events in the sub-net.</p>
+                <a href="lookbook.html" class="btn-zine" style="background: var(--black); color: var(--white);">Enter the Vision</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">URBN_ZN</div>
+                    <p style="opacity: 0.7;">The definitive underground zine collective. Noise is clarity. Raw is honest.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>CHANNELS</h4>
+                    <ul>
+                        <li><a href="index.html">The Drop</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="lookbook.html">The Vision</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LOGS</h4>
+                    <ul>
+                        <li>Privacy Protocol</li>
+                        <li>Terms of Service</li>
+                        <li>Shipping Nodes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 URBN_ZN COLLECTIVE. (MADE_IN_THE_SHADOWS)</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

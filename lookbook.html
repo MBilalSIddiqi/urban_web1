@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE VISION | Urban Lookbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 6rem 0 4rem;
+            background-color: var(--black);
+            color: var(--white);
+            border-bottom: var(--border-width) solid var(--neon);
+        }
+        .page-header h1 { color: var(--neon); }
+
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-auto-rows: 10px;
+            gap: 0;
+            margin-top: 4rem;
+            background: var(--black);
+            border: var(--border-width) solid var(--black);
+        }
+
+        .masonry-item {
+            background-color: var(--white);
+            border: 2px solid var(--black);
+            padding: 1.5rem;
+            position: relative;
+            grid-row-end: span 40;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: var(--transition-glitch);
+        }
+
+        .masonry-item:nth-child(2n) { grid-row-end: span 60; background: var(--grey-dark); color: var(--white); }
+        .masonry-item:nth-child(3n) { grid-row-end: span 50; background: var(--neon); }
+
+        .masonry-item img {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            width: calc(100% - 3rem);
+            height: calc(100% - 8rem);
+            object-fit: cover;
+        }
+
+        .item-label {
+            position: relative;
+            z-index: 2;
+            font-weight: 800;
+            font-size: 0.8rem;
+            border-top: 2px solid var(--black);
+            padding-top: 1rem;
+        }
+
+        @media (max-width: 800px) {
+            .masonry-grid { display: flex; flex-direction: column; }
+            .masonry-item { height: 400px; border-bottom: var(--border-width) solid var(--black); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">URBN_ZN</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">DROP</a></li>
+                    <li><a href="culture.html">CULTURE</a></li>
+                    <li><a href="lookbook.html" class="active">VISION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="tag-label">V_REPORT_26</span>
+                <h1>THE VISION.</h1>
+                <p style="font-weight: 700; margin-top: 1rem;">Raw imagery from the front lines of urban exploration.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 0;">
+            <div class="masonry-grid">
+                <!-- Item 1 -->
+                <div class="masonry-item">
+                    <div style="width:100%; height:100%; border: 1px solid var(--black); background: var(--grey-dark); position:absolute; top:1.5rem; left:1.5rem; width:calc(100% - 3rem); height:calc(100% - 8rem);"></div>
+                    <div class="item-label">
+                        <span class="tag-label">SHOT_01</span>
+                        <p>CONCRETE_FLOW.png</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="masonry-item">
+                    <div style="width:100%; height:100%; border: 1px solid var(--black); background: var(--white); position:absolute; top:1.5rem; left:1.5rem; width:calc(100% - 3rem); height:calc(100% - 8rem);"></div>
+                    <div class="item-label">
+                        <span class="tag-label">SHOT_02</span>
+                        <p>NEON_NIGHTS.raw</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="masonry-item">
+                    <div style="width:100%; height:100%; border: 1px solid var(--black); background: var(--grey-dark); position:absolute; top:1.5rem; left:1.5rem; width:calc(100% - 3rem); height:calc(100% - 8rem);"></div>
+                    <div class="item-label">
+                        <span class="tag-label">SHOT_03</span>
+                        <p>VOID_STATIC.jpg</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="masonry-item">
+                    <div style="width:100%; height:100%; border: 1px solid var(--black); background: var(--white); position:absolute; top:1.5rem; left:1.5rem; width:calc(100% - 3rem); height:calc(100% - 8rem);"></div>
+                    <div class="item-label">
+                        <span class="tag-label">SHOT_04</span>
+                        <p>SIGNAL_LOST.tiff</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="masonry-item">
+                    <div style="width:100%; height:100%; border: 1px solid var(--black); background: var(--grey-dark); position:absolute; top:1.5rem; left:1.5rem; width:calc(100% - 3rem); height:calc(100% - 8rem);"></div>
+                    <div class="item-label">
+                        <span class="tag-label">SHOT_05</span>
+                        <p>URBAN_DECAY.heic</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="masonry-item">
+                    <div style="width:100%; height:100%; border: 1px solid var(--black); background: var(--white); position:absolute; top:1.5rem; left:1.5rem; width:calc(100% - 3rem); height:calc(100% - 8rem);"></div>
+                    <div class="item-label">
+                        <span class="tag-label">SHOT_06</span>
+                        <p>GRID_PULSE.gif</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center; border-top: var(--border-width) solid var(--black);">
+            <div class="container">
+                <h2>WANT_TO_CONTRIBUTE?</h2>
+                <p style="margin: 3rem auto; max-width: 600px; font-weight: 800;">We are always looking for new nodes. Submit your raw captures for the next zine issue.</p>
+                <form id="zineForm" style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <input type="email" placeholder="SIGNAL_ID@EMAIL.COM" required style="flex:1; min-width: 250px; padding: 1.5rem; border: var(--border-width) solid var(--black); outline: none;">
+                    <button type="submit" class="btn-zine" style="flex: none;">JOIN_GRID</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">URBN_ZN</div>
+                    <p style="opacity: 0.7;">The definitive underground zine collective. Noise is clarity. Raw is honest.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>CHANNELS</h4>
+                    <ul>
+                        <li><a href="index.html">The Drop</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="lookbook.html">The Vision</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LOGS</h4>
+                    <ul>
+                        <li>Privacy Protocol</li>
+                        <li>Terms of Service</li>
+                        <li>Shipping Nodes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 URBN_ZN COLLECTIVE. (MADE_IN_THE_SHADOWS)</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
